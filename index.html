@@ -17,48 +17,69 @@
         crossorigin="anonymous">
     <style>
         .carousel-item img {
-        width: auto;
-        height: 225px;
-    }
-    .news{
-        text-decoration: underline;
-    }
+            width: auto;
+            height: 225px;
+            margin-left: auto;
+                margin-right: auto;
+        }
 
-    .newsFb{
-        font-size: 20px;
-    }
-    div.container{
-        padding-bottom: 20px;
-        padding-top: 20px;
+        .news {
+            text-decoration: underline;
+        }
+
+        .newsFb {
+            font-size: 20px;
+        }
+
+        div.container {
+            padding-bottom: 20px;
+            padding-top: 20px;
+            
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #e3141e!important ;
+        }
+
+        .border-color {
+            border-color: #e3141e!important ;
+        }
+
+        .contact-img {
+            height: 200px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .no-border {
+            border: none;
+        }
         
-    }
+        .text-justyfied {
+            text-align: justify;
+        }
 
-    .border-bottom{
-        border-bottom: 1px solid #e3141e!important ;
-    }
+        @media screen and (min-width: 600px) {
+            div.carousel-item img{
+                
+                height: auto;
+            }
+        }
 
-    .border-color{
-        border-color: #e3141e!important ;
-    }
-    .contact-img{
-        height: 200px;
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .no-border{
-        border: none;
-    }
-    .text-justyfied{
-        text-align: justify;
-    }
+        #nasze_dzialania, #kontakt {
+            padding-top: 20px;
+        }
+
+        .padding-top-20 {
+            padding-top: 20px;
+        }
     </style>
 
 </head>
 
 <body>
-    <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="#">
             <img src="img/logo.png" height="60" class="d-inline-block align-top" alt="">
         </a>
@@ -67,8 +88,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
                     <a class="nav-link" href="#o_nas">O nas <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -87,13 +108,14 @@
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/ster.jpg" class="d-block w-100" alt="...">
+
+                <img src="img/ster.jpg" class="d-block" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="img/ster2.jpg" class="d-block w-100" alt="...">
+                <img src="img/ster2.jpg" class="d-block" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="img/sterW.jpg" class="d-block w-100" alt="...">
+                <img src="img/sterW.jpg" class="d-block" alt="...">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -114,7 +136,17 @@
             osób z niepełnosprawnościami. Chcemy promować otwartość, współdziałanie
             i partycypację społeczną. Dyskryminować „gettowość” działań skierowanych do m.in.: osób niepełnosprawnych,
             osób
-            z zaburzeniami psychicznymi i seniorów.
+            z zaburzeniami psychicznymi i seniorów. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+            corporis, architecto accusamus sequi aliquam dolores possimus consequatur placeat, obcaecati nemo harum
+            dolor pariatur est ipsum. Quod ex velit commodi quam maiores possimus reiciendis explicabo, cum vitae aut
+            hic veniam esse delectus dicta itaque alias laudantium consectetur in est accusamus, dolores quos. At,
+            quasi consequuntur. Modi nam sunt aspernatur! Odit, animi magnam labore ut reiciendis inventore pariatur
+            totam consequuntur similique modi rem itaque, quam tenetur provident tempore harum cum eveniet eum unde?
+            Aliquid impedit provident eaque iusto, quaerat corrupti pariatur hic aperiam quod numquam doloribus
+            exercitationem vero deleniti accusantium qui non vel possimus adipisci suscipit odit fugiat animi! Velit
+            labore, praesentium atque at perspiciatis consectetur vero? Cumque ducimus odio itaque quasi optio, nostrum
+            nisi nihil accusamus temporibus! Dignissimos ipsam enim natus quis, odit quibusdam iste cumque quasi ea
+            quidem eum laudantium a ut impedit earum ullam molestias, similique dolore eligendi officiis?
         </p>
         <div class="news">Zobacz co u nas słychać na <a href="https://pl-pl.facebook.com/StowarzyszenieNaDrodzeEkspresji/"><i
                     class="fab fa-facebook newsFb"></i></a></div>
@@ -160,7 +192,7 @@
         </div>
     </div>
     <h3 class="text-center" id="kontakt">Kontakt</h3>
-    <div class="card-deck text-center">
+    <div class="card-deck text-center padding-top-20">
         <div class="card no-border">
             <img class="card-img-top contact-img" src="img/odmienA.jpg" alt="Card image cap">
             <div class="card-body">
